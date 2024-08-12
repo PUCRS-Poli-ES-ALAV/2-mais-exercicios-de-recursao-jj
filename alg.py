@@ -27,13 +27,28 @@ def fibonacci(n):
         return fibonacci(n-1) + fibonacci(n-2)
 
 # Exercício 4
+# Modele e implemente um método recursivo que calcule o somatório dos números inteiros entre os números k e j, passados como parâmetro.
+def somaint(k,j):
+    if j<k:
+        return "ordem errada"
+    elif j==k+1:
+        return 0
+    else:
+        return j-1 + somaint(k,j-1)
+
 
 # Exercício 5
+# Modele e implemente um método recursivo que recebe um String em retorna true se este String for um palíndrome, false caso contrário.
+def palindrome(string):
+    string_invertida = string[::-1]
+    if strin
 
+string = "Exemplo"
+string_invertida = string[::-1]
 # Exercício 6
 
 # Exercício 7
 
 # Exercício 8
 
-print(fibonacci(1))
+print(somaint(1,3))
